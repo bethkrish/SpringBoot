@@ -1,9 +1,0 @@
-# start up tasks
-tasks:
-- init: ./gradle build
-  command: java -jar SpringBootConfigurations-1.0.jar --app.user.name=Anand --spring.profiles.active=prod
-
-# exposed ports
-ports:
-- port: 8080
-  onOpen: open-preview
