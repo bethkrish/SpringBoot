@@ -1,0 +1,9 @@
+# start up tasks
+tasks:
+- init: ./SpringBootConfigurations/gradle clean build
+  command: java -jar ./SpringBootConfiugrations/build/libs/SpringBootConfigurations-1.0.jar
+
+# exposed ports
+ports:
+- port: 9080
+  onOpen: open-preview
